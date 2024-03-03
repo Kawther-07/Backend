@@ -1,4 +1,5 @@
 {
+
   "name": "api",
   "version": "0.0.1",
   "description": "",
@@ -71,5 +72,24 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  }
+  },
+
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kawther-07/Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kawther-07/Backend/issues"
+  },
+  "homepage": "https://github.com/Kawther-07/Backend#readme"
+
 }
