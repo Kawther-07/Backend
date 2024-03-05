@@ -76,29 +76,29 @@ export class AdminService {
   }
 
   // Me:
-  // private readonly tokens: Set<string> = new Set<string>();
+  private readonly tokens: Set<string> = new Set<string>();
 
-  // async logout(token: string): Promise<void> {
-  //   // Remove the token 
-  //   this.tokens.delete(token);
-  // }
-
-  // async isTokenValid(token: string): Promise<boolean> {
-  //   // Check if the token exists 
-  //   return this.tokens.has(token);
-  // }
-
-  // Ikram:
-  async validateToken(token: string, JWTSecret_Key: string): Promise<boolean> {
-    try {
-      // Verify the token using the provided secret key
-      jwt.verify(token, JWTSecret_Key);
-      return true;
-    } catch (error) {
-      // Token is invalid
-      return false;
-    }
+  async logout(token: string): Promise<void> {
+    // Remove the token 
+    this.tokens.delete(token);
   }
+
+  async isTokenValid(token: string): Promise<boolean> {
+    // Check if the token exists 
+    return this.tokens.has(token);
+  }
+
+  // // Ikram:
+  // async validateToken(token: string, JWTSecret_Key: string): Promise<boolean> {
+  //   try {
+  //     // Verify the token using the provided secret key
+  //     jwt.verify(token, JWTSecret_Key);
+  //     return true;
+  //   } catch (error) {
+  //     // Token is invalid
+  //     return false;
+  //   }
+  // }
 
 }
 
